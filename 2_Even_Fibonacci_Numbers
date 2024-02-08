@@ -1,0 +1,8 @@
+def sum_of_even_fibonacci(limit=4000000):
+  a, b, sum = 1, 2, 0
+  while b < limit:
+    sum += b
+    a, b = a+2*b, 2*a+3*b
+  print(sum)
+  
+sum_of_even_fibonacci()
